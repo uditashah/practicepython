@@ -1,0 +1,19 @@
+#exercise 2... a number tell if its an even or odd number and also tell if it can be divided by 4
+while True:
+    a = raw_input("Please enter a number ")
+    try:
+        number = int(a)
+        break
+    except:
+        print "input not a number"
+        continue
+
+remainder4=number%4
+remaindereven=number%2
+
+if remainder4==0:
+    print number,"is an even number that is also a multiple of four"
+elif remaindereven==0:
+    print number,"is an even number"
+else:
+    print number,"is an odd number"
