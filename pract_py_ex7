@@ -1,0 +1,7 @@
+#take a list and pull out all the odd numbers using only one line of code
+
+#a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+#evenina = [e for e in a if e%2==0]
+#print ( evenina)
+
+print [e for e in [1, 4, 9, 16, 25, 36, 49, 64, 81, 100] if e%2==0]
