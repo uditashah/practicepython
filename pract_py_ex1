@@ -1,0 +1,22 @@
+#exercise 1... ask name and age and return the year they will be 100.
+name = raw_input("Please enter your name: ")
+while True:
+    a = raw_input("Please enter your age: ")
+    c = raw_input("Please enter the number of times you want the message printed: ")    
+    try:
+        age = int(a)
+        count = int(c)
+        break
+    except:
+        print " either one or both your entries were not numbers"
+        continue
+forprint="Hello "+name+" you will turn 100 in "+str(2016+100-age)+" year \n" #i uwould have liked to use a year() function like excel..but did not know how to..
+print count*forprint
+
+        
+#while True:
+ #   if count==0:
+ #       break
+ #  else: 
+ #       print "Hello",name,"you will turn 100 in", 2016+100-age
+ #      count=count-1
