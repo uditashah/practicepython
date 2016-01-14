@@ -1,0 +1,12 @@
+#taking a string from a user and checking if it is a palindrome
+
+word=raw_input("please enter a word: ")
+palin = ""
+
+for c in word:
+    palin = c+palin
+    
+if word == palin:
+    print "you entered ", word, " which is a palindrome"
+else:
+    print "you entered ", word, " which not a palindrome"
