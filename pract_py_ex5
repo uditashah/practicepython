@@ -1,0 +1,14 @@
+#a create a unique list with the common elements from two different randomly generated arrays
+
+import random
+
+randa = random.sample(range(99), 13)
+randb = random.sample(range(99), 15)
+
+intersection = []
+
+for elementa in randa:
+    if elementa in randb and elementa not in intersection:
+        intersection.append(elementa)
+
+print "the two randomly generated arrays are\n",randa, "\n", randb, "\nthe common elements in the two arrays are ",( intersection )
