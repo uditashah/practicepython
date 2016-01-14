@@ -1,0 +1,21 @@
+#ask for a number and create a divisor for all those numbers
+
+
+while True:
+    num = raw_input("please enter an integer:   ")
+    try:
+        number=int(num)
+        break
+    except:
+        print "please enter a valid number"
+        continue
+
+array = range(1,number)
+divisors = []
+
+for element in array:
+    if number%element==0:
+        divisors.append(element)
+    
+for element in divisors:
+    print element
