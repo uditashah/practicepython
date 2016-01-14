@@ -1,0 +1,10 @@
+#find all the elements in the array a that are smaller than 5 and add them to new array, and then print all elements of the new array
+
+a = [1, 1, 2, 3, 5, 8, 12, 21, 34, 55, 89]
+sub5 = []
+for element in a:
+    if element<5:
+       sub5.append(element)
+    
+for element in sub5:
+    print element
