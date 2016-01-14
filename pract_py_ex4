@@ -17,5 +17,4 @@ for element in array:
     if number%element==0:
         divisors.append(element)
     
-for element in divisors:
-    print element
+print 'the divsors for ', number," are",( divisors )
