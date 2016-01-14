@@ -1,0 +1,43 @@
+#rock paper scissors with 2 players or the computer
+import random
+
+options = ['rock','paper', 'scissors', 'done']
+computeroptions = ['rock','paper', 'scissors']
+player1name = raw_input("please enter the name of the first player: ")
+player2name = raw_input("please enter the name of the first player,if you want to play with the computer enter computer: ")
+
+
+while True:
+
+    while True:
+        player1 = raw_input("player 1 please enter one of the following 'rock','paper','scissors' enter 'done' to exit : ")
+        if player1 in options:
+            break
+        else:
+            print "invalid entry please try again"
+            continue
+
+    if player1=="done":
+        break     
+    
+    if player2name=="computer":
+        player2 = random.choice(computeroptions)
+        print "computer chose", player2
+    else:
+        while True:
+            player2 = raw_input("player 2 please enter one of the following 'rock','paper','scissors' enter 'done' to exit : ")
+            if player2 in options:
+                break
+            else:
+                print "invalid entry please try again"
+                continue
+            
+    if player2=="done":
+        break
+    elif player1==player2:
+        print "its a draw"
+    elif ((player1 == "rock") and (player2 == "scissors")) or ((player1 == "scissors") and (player2 == "paper")) or ((player1 == "paper") and (player2 == "rock")):
+        print player1name, "wins!!!"
+    else:
+        print player2name, "wins!!!"
+        
