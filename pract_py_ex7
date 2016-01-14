@@ -1,7 +1,9 @@
 #take a list and pull out all the odd numbers using only one line of code
 
+# this be how id prefer to do it
 #a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 #evenina = [e for e in a if e%2==0]
 #print ( evenina)
 
+# this be how i did it as it was to be done in one line
 print [e for e in [1, 4, 9, 16, 25, 36, 49, 64, 81, 100] if e%2==0]
